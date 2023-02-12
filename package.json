@@ -1,0 +1,35 @@
+{
+  "name": "assigment",
+  "version": "2.0.0",
+  "description": "assigment typescript application with PIXI and GSAP",
+  "main": "target/bundle/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch",
+    "build": "browserify src/main.ts -d -p [ tsify --noImplicitAny ] > target/bundle/bundle.js",
+    "watch": "watchify src/main.ts -d -p [ tsify --noImplicitAny ] -o target/bundle/bundle.js -v"
+  },
+  "author": "Shikha Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "@pixi/events": "^7.1.2",
+    "@pixi/particle-emitter": "^5.0.8",
+    "@types/howler": "^2.2.7",
+    "eventemitter3": "^5.0.0",
+    "gsap": "^3.6.0",
+    "howler": "^2.2.3",
+    "pixi-particles": "^4.3.1",
+    "pixi-spine": "^3.1.2",
+    "pixi.js": "6.3.0",
+    "tslint": "^6.1.3"
+  },
+  "files": [
+    "target"
+  ],
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "tsify": "^4.0.2",
+    "typescript": "^3.9.5",
+    "watchify": "^4.0.0"
+  }
+}
