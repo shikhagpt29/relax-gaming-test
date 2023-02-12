@@ -1,7 +1,9 @@
 # How To Run Project locally
 run below commands on terminal
   "npm install"
+
   "npm start"
+
   "run index.html"
 
 # Task #
